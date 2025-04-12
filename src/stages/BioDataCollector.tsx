@@ -366,13 +366,16 @@ export function BioDataCollector({
                   )}
                 </div>
 
-                <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 space-y-4 border border-white/20">
-                  <h4 className="font-medium text-white">Need help with transportation?</h4>
-                  <p className="text-sm text-white/90">
+                <div className="relative rounded-xl p-4 space-y-4 overflow-hidden isolate">
+                  <div className="absolute inset-0 bg-black/40" />
+                  <div className="absolute inset-0 bg-white/10" style={{ backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)' }} />
+                  <div className="relative z-10 space-y-4">
+                  <h4 className="font-medium text-white text-lg">Need help with transportation?</h4>
+                  <p className="text-sm text-white/90 leading-relaxed">
                     We can arrange your transportation to {destination.name}. After booking, we'll send you available flight
                     and land transport options with prices (not included in the vacation package).
                   </p>
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 pt-2">
                     <button
                       onClick={() => setFormData(prev => ({ ...prev, wantsTransportQuote: true }))}
                       className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
@@ -393,6 +396,7 @@ export function BioDataCollector({
                     >
                       No thanks, I'll manage
                     </button>
+                  </div>
                   </div>
                 </div>
               </div>

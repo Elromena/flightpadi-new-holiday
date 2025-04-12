@@ -6,8 +6,8 @@ export const APP_CONFIG = {
     logo: 'https://flightpadi.com/wp-content/uploads/2023/12/flightpadi-150x150.png',
     bank: {
       name: 'FCMB',
-      logo: 'https://flightpadi.com/wp-content/uploads/fcmb-logo.png',
-      accountNumber: '1234567890',
+      logo: 'https://www.fcmb.com/themes/fcmb/logo.png',
+      accountNumber: '1029246225',
       accountName: 'FLIGHTPADI LTD',
       description: 'First City Monument Bank'
     }
